@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 1000px;
+}
+
+
+.banner{
+    position: relative;
+    background:linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.55), rgba(0,0,0,0.35), rgba(0,0,0,0.15)
+    ) ,url(https://www.stac.edu/sites/default/files/Taste%20of%20Rockland.jpg);
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.banner .content{
+    text-align: center;
+    max-width: 800px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(39, 22, 22);
+    opacity: 0.9;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.banner .content h2{
+    text-transform: uppercase;
+    font-size: 50px;
+    color: rgb(77, 121, 121);
+    font-family: 'EchotopiaRegular';
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+.banner .content p{
+    color: rgb(230, 223, 223);
+    font-size: 20px;
+}
+
+.banner .content button{
+    transition: 0.5s;
+}
+
+.banner .content button:hover{
+    color: black;
+    background: blanchedalmond;
+    letter-spacing: 4px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background: linen;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    z-index: 15;
+}
+
+header .logo{
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: none;
+}
+
+header.sticky .logo{
+    color: rgb(8, 7, 7);
+}
+
+header .logo span{
+    color: red;
+}
+
+header .navigation{
+    position: relative;
+    display: flex;
+}
+
+header .navigation li{
+    margin-left: 70px;
+}
+
+header .navigation li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+header .navigation li a:hover{
+    color: rgb(105, 97, 97);
+    letter-spacing: 3px;
+
+}
+
+header.sticky .navigation li a{
+    color: black;
+}
+
+
+section{
+    padding: 100px;
+}
+
+.row .col50{
+    position: relative;
+    width: 50%;
+}
+
+.TitleText{
+    color: black;
+    font-family: 'ButlerRegular';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+}
+
+.TitleText span{
+    color: red;
+}
+
+.row .col50 .image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.row .col50 .image img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu{
+    position: relative;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGl-MCrN6Cr86dUTr1PV_ztfTIEf878KOl4g&usqp=CAU);
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.menu .heading p{
+    color: blanchedalmond;
+    text-align: center;
+}
+
+
+.menu .container_menu .heading{
+    padding-bottom: 60px;
+}
+
+
+.menu .container_menu .row .col-md-6 .card{
+    border: 0;
+    padding: 0 40px;
+    margin-bottom: 60px;
+    position: relative;
+    background: transparent;
+
+}
+
+.menu .container_menu .row .col-md-6 .card .card-img{
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    overflow: hidden;
+    z-index: 9;
+    border-radius: 0;
+}
+
+.menu .container_menu .row .col-md-6 .card .card-img img{
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+    object-fit: cover;
+}
+
+
+.menu .container_menu .row .col-md-6 .card .card-body{
+    background: rgb(117, 66, 66);
+    opacity: 0.9;
+    border-top: 4px solid red;
+    padding: 30px;
+    margin-top: -60px;
+    z-index: 10;
+    box-shadow: 0px 2px 15px rgba(219, 208, 208, 0.05);
+    transition: 0.3s;
+}
+
+
+.menu .container_menu .row .col-md-6 .card .card-body .card-title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu .container_menu .row .col-md-6 .card .card-body .card-title a{
+    text-decoration: none;
+    font-family: 'RoundStyleBookOblique';
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(255, 254, 254);
+    transition: 0.3s;
+
+}
+
+
+.menu .container_menu .row .col-md-6 .card .card-body .card-title a:hover{
+    color: red;
+    letter-spacing: 2px;
+}
+
+
+.menu .container_menu .row .col-md-6 .card .card-body .card-text{
+    color: rgb(226, 198, 198);
+}
+
+
+.menu .container_menu .row .col-md-6 .card .card-body .read-more a{
+    color: rgb(18, 240, 240);
+    text-decoration: line-through;
+    transition: 0.3s;
+}
+
+
+.menu .container_menu .row .col-md-6 .card .card-body .read-more a:hover{
+    color: white;
+    letter-spacing: 2px;
+}
+
+
+.menu .container_menu .row .col-md-6 .card:hover img{
+    transform: scale(1.1);
+}
+
+.contact{
+    background: url(https://im.rediff.com/getahead/2016/oct/26lodi.jpg);
+    background-size: cover;
+}
+
+.contact-form{
+    padding: 75px 50px;
+    background:rgb(255, 254, 254);
+    max-width: 500px;
+    box-shadow: 30px 30px 30px rgb(0, 0, 0);
+    margin-top: 50px;
+
+}
+
+.contact-form h3{
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 20px;
+}
+
+.contact-form .input-box{
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea{
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    resize: none;
+}
+
+.contact-form .input-box input[type="submit"]{
+    color: white;
+    background: rgb(107, 32, 32);
+    display: inline-block;
+    text-decoration: none;
+    max-width: 120px;
+    transition: 1s;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+
+.copyright-text{
+    padding: 8px 40px;
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+.copyright-text p{
+    color: black;
+}
+
+.copyright-text a{
+    color: rgb(235, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.copyright-text a:hover{
+    color: rgb(75, 10, 10);
+}
+
+@media (max-width: 991px){
+    header,
+    header.sticky
+    {
+        padding: 10px 20px;
+    }
+    header .navigation{
+        display: none;
+    }
+
+    header .navigation.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    } 
+
+    header .navigation li{
+        margin-left: 0;
+    }
+
+    header .navigation li a{
+        color: #141619;
+        font-size: 1.6em;
+    }
+
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(https://toppng.com/uploads/preview/menu-icon-png-3-lines-11552739300vcy9ou68zn.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active{
+        background: url(https://toppng.com/uploads/preview/menu-icon-png-3-lines-11552739300vcy9ou68zn.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    header.sticky .menuToggle{
+        filter: invert(1);
+    }
+
+    section {
+        padding: 20px;
+    }
+    
+    .banner .content h2 {
+        font-size: 3em;
+        color: rgb(77, 121, 121);
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col50 {
+        position: relative;
+        width: 100%;
+    }
+
+    .row .col50 .image {
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .contact-form {
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+

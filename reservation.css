@@ -1,0 +1,63 @@
+.booking-section{
+    position: relative;
+    background: url(https://www.matchingfoodandwine.com/files/blogattachments/orange-wines-in-georgia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.reservation{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.reservation h2{
+    color: white;
+    font-family: 'ButlerRegular';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;  
+    text-align: center;
+    transition: 1s;
+}
+
+.reservation span{
+    color: red;
+}
+
+.reservation h2:hover{
+    transition: transform 2s ease,color 2s ease;
+    transform: translateY(-10px);
+    color: tomato;
+}
+
+.reservation-form{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    max-width: 600px;
+    min-height: 550px;
+    opacity: 0.9;
+    margin: 0px auto;
+    transition: 1s;
+}
+
+.reservation-form .form-group label{
+    font-weight: bold;
+    color: rgb(231, 209, 209);
+    font-family: cursive;
+    
+}
+
+@media  (max-width: 991px){
+    .reservation-form {
+        max-width: 300px;
+    }
+}
+
