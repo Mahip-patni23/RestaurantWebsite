@@ -15,81 +15,49 @@
         </div>
 
         <div class="reservation-form">
-            
-            <form action="index.html">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="first_name"> First_Name: </label>
-                            <input type="text" class="form-control" placeholder="Your First_Name" size="30">
-                        </div>
+                <form class="row g-3">
+                  <div class="col-md-4">
+                    <label for="validationDefault01" class="form-label">First name</label>
+                    <input type="text" class="form-control" placeholder="Your first name..." id="validationDefault01"  required>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationDefault02" class="form-label">Last name</label>
+                    <input type="text" class="form-control" placeholder="Your last name..." id="validationDefault02"  required>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationDefaultUsername" class="form-label">Email</label>
+                    <div class="input-group">
+                      <!-- <span class="input-group-text" id="inputGroupPrepend2">@</span> -->
+                      <input type="email" class="form-control" placeholder="Your email..." id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
                     </div>
-
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="last_name"> Last_Name: </label>
-                            <input type="text" class="form-control" placeholder="Your Last_Name" size="30">
-                        </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="validationDefault03" class="form-label">Mobile No</label>
+                    <input type="text" class="form-control" placeholder="Your mobile no..." id="validationDefault03" required>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationDefault04" class="form-label">Date Of Booking</label>
+                    <input type="date" class="form-control" id="validationDefault04" required>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationDefault05" class="form-label">Time Of Booking</label>
+                    <input type="time" class="form-control" id="validationDefault05" required>
+                  </div>
+                  <!-- <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                      <label class="form-check-label" for="invalidCheck2">
+                        Agree to terms and conditions
+                      </label>
                     </div>
-
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="email"> Email: </label>
-                            <input type="text" class="form-control" placeholder="Your E-Mail" size="30">
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="phone"> Phone </label>
-                            <input type="text" class="form-control" placeholder="Your Phone No" size="30">
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="date"> Date Of Booking: </label>
-                            <input type="date" class="form-control" placeholder="Date Of Booking" size="30">
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="time"> Time Of Booking: </label>
-                            <input type="time" class="form-control" placeholder="Time Of Booking" size="30">
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="persons"> Persons: </label>
-                            <input type="number" class="form-control" placeholder="No Of Persons" size="30">
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-12 mt-3">
-                        <div class="form-group text-center">
-                            <input type="submit" value="Make a Reservation" class="btn btn-success py-3 px-5" onclick="reservation()">
-                        </div>
-                    </div>
-
-                
-                </div>
-            </form>
-
-            <script src="index.js">
-
-            </script>
-
+                  </div> -->
+                  <div class="col-12">
+                    <button>MAKE A RESERVATION</button>
+                  </div>
+                </form>
 
         </div>
-
     </section>
+    <script src="index.js"></script>
 </body>
 </html>

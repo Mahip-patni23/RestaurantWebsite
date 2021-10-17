@@ -1,5 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .booking-section{
-    position: relative;
     background: url(https://www.matchingfoodandwine.com/files/blogattachments/orange-wines-in-georgia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,12 +12,14 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s linear;
     
 }
 
 .reservation{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 2rem;
 }
 
 .reservation h2{
@@ -22,7 +29,8 @@
     font-style: normal;
     font-size: 40px;  
     text-align: center;
-    transition: 1s;
+    transition: all 0.3s linear;
+    letter-spacing: 0.1rem;
 }
 
 .reservation span{
@@ -36,28 +44,73 @@
 }
 
 .reservation-form{
+    width: 50%;
+    margin-bottom: 3rem;
     padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    max-width: 600px;
-    min-height: 550px;
-    opacity: 0.9;
-    margin: 0px auto;
-    transition: 1s;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.3s linear;
 }
 
-.reservation-form .form-group label{
-    font-weight: bold;
-    color: rgb(231, 209, 209);
-    font-family: cursive;
+input{
+    padding: 12px;
+    border-radius: 10px;
+}
+
+label{
+    color: white;
+}
+
+button{
+    background-color: rgb(116, 0, 0);
+    color: white;  
+}
+
+button:hover{
+    background: transparent;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s linear;
+}
+
+.col-12{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+button{
+    font-size: 1.2rem;
+    font-style: italic;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;  
+}
+
+@media screen and (max-width: 1300px){
+    .reservation-form {
+        width: 70%;
+    }
     
 }
 
-@media  (max-width: 991px){
-    .reservation-form {
-        max-width: 300px;
-    }
+
+/* .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
 }
+  
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+
 

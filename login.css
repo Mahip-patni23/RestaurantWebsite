@@ -7,14 +7,14 @@
 .sign-in{
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
 }
 
 .sign-in .image{
     position: relative;
     width: 50%;
-    height: 100%;
+    min-height: 100vh;
 }
 
 .sign-in .image img{
@@ -31,7 +31,8 @@
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 100%;
+    height: 100vh;
+    background-color: rgb(168, 168, 168);
 }
 
 .sign-in .sign-in-form .form-content{
@@ -120,42 +121,49 @@
     text-align: center;
     margin: 80px 0 10px;
     font-weight: 500;
+    margin-bottom: 2rem;
 }
 
-.sign-in .sign-in-form .form-content ul li img{
-    width: 40px;
-    height: 40px;
-}
-
-.sign-in .sign-in-form .form-content .sci{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 1s;
-}
-
-.sign-in .sign-in-form .form-content .sci li{
+.sci{
     list-style: none;
-    width: 40;
-    height: 40;
     display: flex;
-    justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    margin: 0 15px;
-    cursor: pointer;
+    justify-content:space-evenly;
 }
 
-.sign-in .sign-in-form .form-content .sci li:hover{
-    background: rgb(110, 82, 110);
+.sci li button{
+    background: transparent;
+    border: none;
+    font-size: 1.7rem;
 }
 
-@media (max-width: 868px)
-{
-    .sign-in .image {
-        top: 0;
-        left: 0;
+.sci li button:hover{
+    color: red;
+}
+
+@media screen and (max-width: 680px) {
+
+    .sign-in .image{
+        position: absolute;
         width: 100%;
-       
     }
+
+    .sign-in-form{
+        width: inherit;
+    }
+
+    .sign-in-form .form-content{
+        width: 100%;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+
+
+    
+    
 }

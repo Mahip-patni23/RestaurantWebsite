@@ -1,0 +1,165 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.menu1{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 4rem 2rem; 
+    background: url(https://www.wallpapertip.com/wmimgs/44-447032_wine-glass-wallpaper-hd-wallpapers-of-wine-glasses.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.title{
+    margin: 3rem;
+}
+
+.title h2{
+    font-size: 2.7rem;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 0.1rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px black;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.title h2 span{
+    color: red;
+}
+
+.section-center{
+    width: 100%;
+    width: 90vw;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+   /*  max-width: 1170px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+    grid-column-gap: 3rem; 
+    grid-row-gap: 2rem;
+}
+
+.menu1-item{
+    width: 100%;
+    padding: 2rem 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    box-shadow: 2px 2px 20px black;
+    background-color: rgba(255, 197, 8, 0.3);
+}
+
+@media screen and (max-width: 670px)  {
+    .section-center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
+.menu1-item:hover{
+    border: 2px solid rgb(156, 155, 155);
+}
+
+.item-img{
+    overflow: hidden; 
+    margin-right: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s linear;
+}
+
+.item-img:hover{
+    opacity: 0.5;
+    transform: scaleX(-1);
+}
+
+.item-info{
+    padding: 4px;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-around;
+}
+
+.heading h3{
+    text-transform: capitalize;
+    font-style: italic;
+    letter-spacing: 0.1rem;
+    color: rgb(250, 192, 0);
+    font-weight: bold;
+}
+
+.heading h4{
+    letter-spacing: 0.1rem;
+    color: rgb(255, 196, 0);
+    font-size: 1.1rem;
+}
+
+.item-info p{
+    padding-top: 1.2rem;
+    border-top: 1px solid rgb(126, 126, 126);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.btn-container{
+    margin-bottom: 3rem;
+}
+
+.filter-btn{
+    border: 2px solid rgb(167, 116, 8);
+    padding: 0.5rem 1.5rem ;
+    margin-left: 1rem;
+    background-color: rgba(207, 163, 42, 0.4);
+    color: rgb(255, 166, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 10px;
+}
+
+.filter-btn:hover{
+    background: transparent;
+    border: 2px solid rgb(138, 90, 0);
+}
+
+@media  screen and (max-width: 555px) {
+    .btn-container{ 
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+    }
+
+    .filter-btn{
+        width: 50%;
+        margin-bottom: 1rem
+        ;
+    }
+
+    
+}
+
+
